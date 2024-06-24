@@ -3,8 +3,8 @@
 #4) Identify files in source folder that matches the date criteria.
 #5) Recurse through the list of files to be copied and copy file. Throw error if file is not copied
 
-$Source = "C:\Source\"
-$Destination = "C:\Destination\"
+$Source = "C:\Helena\Resume\2024\Job Applications 2024\1Knowledge Articles"
+$Destination = "C:\Helena\Resume\2024\Job Applications 2024\1Knowledge Articles\Test"
 $date = Get-Date
 $StartDate =$Date.adddays(-1)
 $EndDate = Get-Date
@@ -16,7 +16,7 @@ $Files = Get-ChildItem -Path $source -File |Where-Object { $_.CreationTime -ge $
 #recurse through each file that meets the criteria
 foreach ($File in $Files)
 {
-	try
+	try #Error Checking
 		{
 			copy-item $File $destination
 			write-Host "Copied $File Success"

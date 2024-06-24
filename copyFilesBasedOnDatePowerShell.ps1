@@ -9,7 +9,7 @@ $date = Get-Date
 $StartDate =$Date.adddays(-1)
 $EndDate = Get-Date
 
-Write-Host "Moving Files between $StartDate $EndDate"
+Write-Host "Moving Files between $StartDate and $EndDate"
 
 $Files = Get-ChildItem -Path $source -File |Where-Object { $_.CreationTime -ge $StartDate  -and $_.CreationTime -le $EndDate  }
 

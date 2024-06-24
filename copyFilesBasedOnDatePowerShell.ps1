@@ -3,8 +3,8 @@
 #4) Identify files in source folder that matches the date criteria.
 #5) Recurse through the list of files to be copied and copy file. Throw error if file is not copied
 
-$Source = "C:\Helena\Resume\2024\Job Applications 2024\1Knowledge Articles"
-$Destination = "C:\Helena\Resume\2024\Job Applications 2024\1Knowledge Articles\Test"
+$Source = "C:\Source\"
+$Destination = "C:\Destination"
 $date = Get-Date
 $StartDate =$Date.adddays(-1)
 $EndDate = Get-Date

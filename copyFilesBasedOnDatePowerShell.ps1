@@ -4,7 +4,7 @@
 #5) Recurse through the list of files to be copied and copy file. Throw error if file is not copied
 
 $Source = "C:\Source\"
-$Destination = "C:\Destination"
+$Destination = "C:\Destination\"
 $date = Get-Date
 $StartDate =$Date.adddays(-1)
 $EndDate = Get-Date
